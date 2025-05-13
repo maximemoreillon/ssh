@@ -12,8 +12,6 @@ RUN echo "PasswordAuthentication no" >> /etc/ssh/sshd_config && \
   echo "GatewayPorts yes" >> /etc/ssh/sshd_config 
     
 EXPOSE 22
-EXPOSE 2222
-EXPOSE 1080
 
 COPY ./entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
