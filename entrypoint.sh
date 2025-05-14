@@ -5,8 +5,6 @@ if [[ -z "$SSH_USERNAME" ]]; then
   exit 2
 fi
 
-
-
 # Create the user 
 useradd -m -s /bin/bash $SSH_USERNAME
 echo "Created user $SSH_USERNAME"
